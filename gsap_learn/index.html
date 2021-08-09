@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- <div class="container">
+    <div class="support"></div>
+    <div class="box">
+      <div class="gray"></div>
+      <div id="trigger2">
+        <div id="animate2">
+          <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolor eum assumenda dignissimos eos unde aliquam saepe a ipsam quam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+        <div class="gray"></div>
+        <div id="trigger3">
+          <div id="animate3">
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolor eum assumenda dignissimos eos unde aliquam saepe a ipsam quam.</p>
+          </div>
+        </div>
+      </div>
+    <div class="support"></div>
+  </div> -->
+  <body>
+    <div id="header"></div>
+    <div id="darkGrey"></div>
+    <div id="sticky2" class="">
+      <p>Sticky object 1 - triggered by scrolling position of GREEN</p>
+    </div>
+    <div id="green">
+      <button id="clickbtn">submit</button>
+    </div>
+
+    <div id="sticky" class="">
+      <p>Sticky object 2 - triggered by scrolling position of GREEN</p>
+    </div>
+    <div id="red"></div>
+    <div id="sticky3" class="">
+      <p>Sticky object 3 - triggered by scrolling position of GREEN</p>
+    </div>
+    <footer id="black">Footer section</footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"
+      integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
+      integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="main.js"></script>
+    <script></script>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js" integrity="sha512-SuKlyVGK9c7adN5I0qO0zZt1KAXK9WpUguwgH16A3s8Wvrc1X3mum4PS9bI7223Y2v5KBzx3qTCdlVymgF0uWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js" integrity="sha512-oyWYNZUIND9zR+4y3rkS7H+gOlqV/iuSJtpnz0sds9CtoQuUy2Z/hBIu7CXpyre8lVojuBClT7Hi3Hzd9hERYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/EasePack.min.js" integrity="sha512-ukWvHDJleXRIN1gHv7mMhdGIyD5RaHa0sVnNKFGZd0t7848OMtHB3vSyOk3/fqyRCgKm9wWGjUJ8V8cmou7JVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/EaselPlugin.min.js" integrity="sha512-TBHaEQ3HzvDJLCesS4/wBd7uyBvmDD7UYl69QNZoTroJLZpU5rdv0e5TZuL7o8tozTzc7JVxWCJnskwLlYfOSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js" integrity="sha512-TCWIV57O10riZ8jjGxGdx7BNNGydl57F4y8+EIK8szMou/flyNCRogOhFIMEDmD7NuAsfWoraH2VNAwHq7aFrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/PixiPlugin.min.js" integrity="sha512-+A/mqIoQVL9sh8gIUWMBHf2uIuscqtwbvi8yU0y1y/UTt8ilhm/huqZNKWO5Xwf0nWjmXoEx1Fm+J7RfJiJNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js" integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js" integrity="sha512-yVNhaX0I/lk5GtKya9lE27DopFWV791zsCnMpztLnGJgWESdN825wbH0/I1HfwdNgAKFsq9pXv5vpXjTAU7h3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
+  </body>
+</html>

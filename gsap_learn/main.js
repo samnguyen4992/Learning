@@ -157,7 +157,7 @@ scrollcreate("header", "darkGrey", "sticky2");
 scrollcreate("green", "black", "sticky3");
 //scrollcreate("darkGrey", "darkGrey", "sticky2");
 let btn = document.querySelector("#clickbtn");
-btn.addEventListener("click", function (e) {
+btn.addEventListener("click", (e) => {
   console.log(e.currentTarget);
   console.log({ e });
 });
